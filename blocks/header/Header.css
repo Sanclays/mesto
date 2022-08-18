@@ -1,0 +1,13 @@
+.header {
+  max-width: 100%;
+  max-height: 74px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #545454;
+  display: block;
+}
+
+@media screen and (max-width: 517px) {
+  .header {
+    max-height: 57px;
+  }
+}
