@@ -1,0 +1,22 @@
+.card__like {
+  width: 22px;
+  height: 19px;
+  background-image: url(../../../images/card-like.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  transition: opacity 0.4s linear;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+.card__like:hover {
+  opacity: 0.6;
+}
+
+.card__like:active {
+  background-image: url(../../../images/card-like_active.png);
+}

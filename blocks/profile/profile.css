@@ -2,11 +2,12 @@
   display: grid;
   grid-template-columns: 120px 1fr 150px;
   gap: 30px;
+  margin-bottom: 51px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 896px) {
   .profile {
-    margin: 0 19px;
+    margin: 0 19px 36px;
   }
 }
 

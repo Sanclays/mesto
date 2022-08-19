@@ -1,0 +1,19 @@
+.library {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 17px;
+  justify-items: center;
+}
+
+@media screen and (max-width: 896px) {
+  .library {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .library {
+    grid-template-columns: 1fr;
+
+  }
+}
