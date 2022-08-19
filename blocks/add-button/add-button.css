@@ -1,0 +1,19 @@
+.add-button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #fff;
+  background: url(../../images/add-button.png);
+  background-size: 22px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+  align-self: center;
+}
+
+@media screen and (max-width: 625px) {
+  .add-button {
+    width: 100%;
+    background-size: 16px;
+  }
+}

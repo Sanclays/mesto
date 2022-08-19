@@ -1,0 +1,20 @@
+.profile__edit {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fff;
+  background: url(../../../images/profile-edit.png);
+  background-position: 50% 50%;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+  grid-area: edit;
+}
+
+@media screen and (max-width: 625px) {
+  .profile__edit {
+    width: 18px;
+    height: 18px;
+    background-size: 7.5px;
+  }
+}

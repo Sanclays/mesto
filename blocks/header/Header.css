@@ -4,9 +4,10 @@
   box-sizing: border-box;
   border-bottom: 1px solid #545454;
   display: block;
+  margin-bottom: 40px;
 }
 
-@media screen and (max-width: 517px) {
+@media screen and (max-width: 625px) {
   .header {
     max-height: 57px;
   }

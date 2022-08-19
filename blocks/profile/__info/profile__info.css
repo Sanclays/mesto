@@ -1,0 +1,23 @@
+.profile__info {
+  display: grid;
+  grid-template-columns: minmax(10px, max-content) max-content;
+  gap: 16px 18px;
+  grid-template-areas:
+    "title edit"
+    "text .";
+  align-items: baseline;
+  align-self: center;
+}
+
+@media screen and (max-width: 625px) {
+  .profile__info {
+    max-width: max-content;
+    margin: 0 auto 36px;
+    gap: 14px 10px;
+    justify-items: center;
+    grid-template-columns: 30px minmax(10px, max-content) max-content;
+    grid-template-areas:
+      ". title edit"
+      ". text .";
+  }
+}
