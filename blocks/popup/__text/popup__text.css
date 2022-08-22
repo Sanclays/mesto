@@ -1,0 +1,18 @@
+.popup__text {
+  box-sizing: border-box;
+  padding: 0 0 8px;
+  font-size: 14px;
+  min-height: 27px;
+  line-height: 1.2;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 48px;
+}
+
+.popup__text:focus {
+  outline: none;
+}
+
+.popup__text:first-of-type {
+  margin-bottom: 30px;
+}
