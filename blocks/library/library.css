@@ -3,10 +3,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 17px;
   justify-items: center;
-  margin-bottom: 67px;
+  margin-bottom: 69px;
 }
 
-@media screen and (max-width: 896px) {
+@media screen and (max-width: 880px) {
   .library {
     grid-template-columns: 1fr 1fr;
   }

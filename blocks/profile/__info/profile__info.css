@@ -1,7 +1,7 @@
 .profile__info {
   display: grid;
   grid-template-columns: minmax(10px, max-content) max-content;
-  gap: 16px 18px;
+  gap: 7px 20px;
   grid-template-areas:
     "title edit"
     "text .";
