@@ -13,9 +13,9 @@
   .profile__info {
     max-width: max-content;
     margin: 0 auto 32px;
-    gap: 10px 5px;
+    gap: 8px 11px;
     justify-items: center;
-    grid-template-columns: 30px minmax(10px, max-content) max-content;
+    grid-template-columns: 17px minmax(10px, max-content) max-content;
     grid-template-areas:
       ". title edit"
       ". text .";

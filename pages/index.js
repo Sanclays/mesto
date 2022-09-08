@@ -8,16 +8,21 @@ const jobInput = document.querySelector('#about');
 const nameProfile = profile.querySelector('.profile__title');
 const jobProfile = profile.querySelector('.profile__text');
 
+//функция редактирование класса Popup`a
+function toggle() {
+  popup.classList.toggle('popup_opened');
+}
+
 // открытие popup
 profileEdit.addEventListener('click', () => {
   nameInput.value = nameProfile.textContent;
   jobInput.value = jobProfile.textContent;
-  popup.classList.toggle('popup_opened');
+  toggle();
 });
 
 // // закртитие popup
 popupClose.addEventListener('click', () => {
-  popup.classList.toggle('popup_opened');
+  toggle();
 });
 
 // отправка изменений профиля на web
@@ -25,5 +30,5 @@ formElement.addEventListener('submit', (evt) => {
   evt.preventDefault();
   nameProfile.textContent = nameInput.value;
   jobProfile.textContent = jobInput.value;
-  popup.classList.toggle('popup_opened');
+  toggle();
 });

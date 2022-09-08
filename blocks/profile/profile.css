@@ -7,12 +7,13 @@
 
 @media screen and (max-width: 880px) {
   .profile {
-    margin: 0 19px 34px;
+    margin: 0 19px 36px;
   }
 }
 
 @media screen and (max-width: 625px) {
   .profile {
-    display: block;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 }

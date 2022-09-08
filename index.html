@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mesto</title>
+  <title>Место</title>
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -19,56 +19,42 @@
       <img src="./images/profile-avatar.png" alt="Аватар профиля" class="profile__avatar">
       <div class="profile__info">
         <h1 class="profile__title">Жак-Ив Кусто</h1>
-        <button class="profile__edit"></button>
+        <button type="button" class="profile__edit"></button>
         <p class="profile__text">Исследователь океана</p>
       </div>
-      <button class="add-button"></button>
+      <button type="button" class="add-button"></button>
     </section>
 
     <ul class="library">
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-castle.jpg" alt="замок" class="card__img">
-          <figcaption class="card__caption">Карачаевск</figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-castle.jpg" alt="замок" class="card__img">
+        <h2 class="card__title">Карачаевск</h2>
+        <button type="button" class="card__like"></button>
       </li>
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-field.jpg" alt="поле" class="card__img">
-          <figcaption class="card__caption">Гора Эльбрус</figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-field.jpg" alt="поле" class="card__img">
+        <h2 class="card__title">Гора Эльбрус</h2>
+        <button type="button" class="card__like"></button>
       </li>
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-rock.jpg" alt="гора" class="card__img">
-          <figcaption class="card__caption">Домбай
-          </figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-rock.jpg" alt="гора" class="card__img">
+        <h2 class="card__title">Домбай</h2>
+        <button type="button" class="card__like"></button>
       </li>
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-castle.jpg" alt="замок" class="card__img">
-          <figcaption class="card__caption">Карачаево-Черкесия</figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-castle.jpg" alt="замок" class="card__img">
+        <h2 class="card__title">Карачаево-Черкесия</h2>
+        <button type="button" class="card__like"></button>
       </li>
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-field.jpg" alt="поле" class="card__img">
-          <figcaption class="card__caption">Гора Эльбрус</figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-field.jpg" alt="поле" class="card__img">
+        <h2 class="card__title">Гора Эльбрус</h2>
+        <button type="button" class="card__like"></button>
       </li>
       <li class="card">
-        <figure class="card__figure">
-          <img src="./images/card-rock.jpg" alt="гора" class="card__img">
-          <figcaption class="card__caption">Домбай
-          </figcaption>
-        </figure>
-        <button class="card__like"></button>
+        <img src="./images/card-rock.jpg" alt="гора" class="card__img">
+        <h2 class="card__title">Домбай</h2>
+        <button type="button" class="card__like"></button>
       </li>
     </ul>
   </main>
@@ -77,15 +63,17 @@
     <p class="footer__copyright"> &copy; 2022. Баум Максим</p>
   </footer>
 
-  <article class="popup">
-    <form class="popup__container">
+  <div class="popup">
+    <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
-      <input type="text" class="popup__text" name="username" id="name">
-      <input type="text" class="popup__text" name="about" id="about">
-      <input type="submit" class="popup__save" value="Сохранить">
-      <div class="popup__close"></div>
-    </form>
-  </article>
+      <form name="edit-profile" class="popup__form">
+        <input type="text" class="popup__text" name="username" placeholder="Имя профиля" id="name">
+        <input type="text" class="popup__text" name="about" placeholder="описание профиля" id="about">
+        <input type="submit" class="popup__save" value="Сохранить">
+      </form>
+      <button type="button" class="popup__close"></button>
+    </div>
+  </div>
   <script src="./pages/index.js"></script>
 </body>
 
