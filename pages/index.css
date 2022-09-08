@@ -13,7 +13,6 @@
 @import url(../blocks/add-button/add-button.css);
 @import url(../blocks/library/library.css);
 @import url(../blocks/card/card.css);
-@import url(../blocks/card/__figure/card__figure.css);
 @import url(../blocks/card/__img/card__img.css);
 @import url(../blocks/card/__title/card__title.css);
 @import url(../blocks/card/__like/card__like.css);
