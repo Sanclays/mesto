@@ -4,13 +4,12 @@
   background-image: url(../../../images/card-like.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
-  background-color: #fff;
   cursor: pointer;
   transition: opacity 0.4s linear;
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
+  grid-area: like;
+  place-self: center;
 }
 
 .card__like:hover {

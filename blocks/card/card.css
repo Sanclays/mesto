@@ -5,7 +5,12 @@
   background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 63px;
+  grid-template-rows: 282px 1fr;
+  grid-template-areas:
+    "img img"
+    "title like";
 }
 
 @media screen and (max-width: 880px) {
