@@ -8,6 +8,7 @@ const jobInput = document.querySelector('#about');
 const nameProfile = profile.querySelector('.profile__title');
 const jobProfile = profile.querySelector('.profile__text');
 const libraryContainer = document.querySelector('.library');
+const addButtonCard = document.querySelector('.add-button');
 const initialCards = [
   {
     name: 'Архыз',
@@ -68,5 +69,14 @@ initialCards.forEach(function(item) {
   const cardElement = cardTemplate.querySelector('.card').cloneNode(true);
   cardElement.querySelector('.card__img').src = item.link;
   cardElement.querySelector('.card__title').textContent = item.name;
+  cardElement.querySelector('.card__like').addEventListener('click',  function  () {
+    event.target.classList.toggle('card__like_active')
+  });
   libraryContainer.append(cardElement);
-})
+});
+
+addButtonCard.addEventListener('click', function(){
+
+});
+
+
