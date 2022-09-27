@@ -25,26 +25,37 @@
       <button type="button" class="add-button"></button>
     </section>
 
-    <ul class="library">
-    </ul>
+    <ul class="library"></ul>
   </main>
 
   <footer class="footer">
     <p class="footer__copyright"> &copy; 2022. Баум Максим</p>
   </footer>
 
-  <div class="popup">
+  <div class="popup popup-edit-profile">
     <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
       <form name="edit-profile" class="popup__form">
-        <input type="text" class="popup__text" name="username" placeholder="Имя профиля" id="name">
+        <input type="text" class="popup__text" name="username" placeholder="Имя профиля" id="username">
         <input type="text" class="popup__text" name="about" placeholder="описание профиля" id="about">
         <input type="submit" class="popup__save" value="Сохранить">
       </form>
       <button type="button" class="popup__close"></button>
     </div>
   </div>
-  
+
+  <div class="popup popup-add-card">
+    <div class="popup__container">
+      <h2 class="popup__title">Новое место</h2>
+      <form name="edit-profile" class="popup__form">
+        <input type="text" class="popup__text" name="name-card" placeholder="Название" id="name-card">
+        <input type="text" class="popup__text" name="link-card" placeholder="Сcылка на картинку" id="link-card">
+        <input type="submit" class="popup__save" value="Сохранить">
+      </form>
+      <button type="button" class="popup__close"></button>
+    </div>
+  </div>
+
   <template id="card-template">
     <li class="card">
       <img class="card__img" src="" alt="пейзаж">
