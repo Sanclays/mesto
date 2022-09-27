@@ -12,8 +12,8 @@
     cursor: pointer;
     transition: opacity 0.4s linear;
     position: absolute;
-    top:20px;
-    right: 20px;
+    top: 14px;
+    right: 13px;
 }
 
 .card__delete:hover {

@@ -3,4 +3,5 @@
   height: 282px;
   object-fit: cover;
   grid-area: img;
+  cursor: zoom-in;
 }
