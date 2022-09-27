@@ -20,6 +20,7 @@ const formAddCard = popupAddCard.querySelector('.popup__form');
 const nameCard = formAddCard.querySelector('#name-card');
 const linkCard = formAddCard.querySelector('#link-card');
 
+
 const initialCards = [
   {
     name: 'Архыз',
@@ -85,9 +86,9 @@ popupCloseEditProfile.addEventListener('click', () => {
 
 //открытие popup добавления карточки
 addCard.addEventListener('click', () => {
-  nameCard.value= "";
-  linkCard.value = "";
   openPopup(popupAddCard);
+  nameCard.value = "";
+  linkCard.value = "";
 });
 
 //отправка данных для добавления карточки
@@ -102,6 +103,20 @@ popupCloseAddCard.addEventListener('click', () => {
   closePopup(popupAddCard);
 });
 
+//обработка клика на лайк
+function cardLike (button) {
+  button.addEventListener('click', (evt) => {
+    evt.target.classList.toggle('card__like_active')
+  });
+}
+
+//обработка клика на корзину
+function cardDelete (button) {
+  button.addEventListener('click', (evt) => {
+    evt.target.closest('.card').remove()
+  });
+}
+
 //создание элемента card
 function createCard(item) {
   const cardTemplate = document.querySelector('#card-template').content;
@@ -109,9 +124,8 @@ function createCard(item) {
   cardElement.querySelector('.card__title').textContent = item.name;
   cardElement.querySelector('.card__img').src = item.link;
   cardElement.querySelector('.card__img').alt = item.alt;
-  cardElement.querySelector('.card__like').addEventListener('click',  function  (evt) {
-    evt.target.classList.toggle('card__like_active')
-  });
+  cardLike(cardElement.querySelector('.card__like'));
+  cardDelete(cardElement.querySelector('.card__delete'));
   return cardElement;
 }
 
@@ -122,4 +136,7 @@ function renderCard (item) {
 
 //создание элементов card из массива
 initialCards.forEach(card => renderCard(card));
+
+
+
 

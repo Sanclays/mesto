@@ -1,0 +1,21 @@
+.card__delete{
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../images/card-delete.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    /*т.к. на белом фоне не видно кнопку "корзина",
+     я взял на себя смелость добавить background*/
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: opacity 0.4s linear;
+    position: absolute;
+    top:20px;
+    right: 20px;
+}
+
+.card__delete:hover {
+    opacity: 0.6;
+}
