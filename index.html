@@ -25,17 +25,19 @@
       <button type="button" class="add-button"></button>
     </section>
 
-    <ul class="library"></ul>
+    <section class="library">
+      <ul class="library__list"></ul>
+    </section>
   </main>
 
   <footer class="footer">
     <p class="footer__copyright"> &copy; 2022. Баум Максим</p>
   </footer>
 
-  <div class="popup popup_edit-profile">
+  <div class="popup popup_profile-edit">
     <div class="popup__container">
       <h2 class="popup__title">Редактировать профиль</h2>
-      <form name="edit-profile" class="popup__form">
+      <form name="profile-edit" class="popup__form">
         <input type="text" class="popup__text" name="username" placeholder="Имя профиля" id="username">
         <input type="text" class="popup__text" name="about" placeholder="описание профиля" id="about">
         <input type="submit" class="popup__save" value="Сохранить">
@@ -44,10 +46,10 @@
     </div>
   </div>
 
-  <div class="popup popup_add-card">
+  <div class="popup popup_card-add">
     <div class="popup__container">
       <h2 class="popup__title">Новое место</h2>
-      <form name="edit-profile" class="popup__form">
+      <form name="card-add" class="popup__form">
         <input type="text" class="popup__text" name="name-card" placeholder="Название" id="name-card">
         <input type="text" class="popup__text" name="link-card" placeholder="Сcылка на картинку" id="link-card">
         <input type="submit" class="popup__save" value="Создать">
@@ -56,7 +58,7 @@
     </div>
   </div>
 
-  <div class="popup popup_open-card">
+  <div class="popup popup_card-open">
     <div class="popup__figure">
       <img src="#" alt="" class="popup__image">
       <p class="popup__figcaption"></p>
@@ -73,6 +75,7 @@
     </li>
   </template>
 
+  <script src="./scripts/cards.js"></script>
   <script src="./scripts/index.js"></script>
 </body>
 

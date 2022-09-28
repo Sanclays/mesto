@@ -1,0 +1,21 @@
+.library__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 17px;
+    justify-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 880px) {
+    .library__list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .library__list {
+        grid-template-columns: 1fr;
+    }
+}
