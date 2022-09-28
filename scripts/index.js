@@ -5,7 +5,7 @@ const jobProfile = profile.querySelector('.profile__text');
 const libraryContainer = document.querySelector('.library__list');
 
 //popup редактирования профиля
-const popupEditProfile = document.querySelector('.popup_profile-edit');
+const popupEditProfile = document.querySelector('.popup_profile_edit');
 const profileEdit = document.querySelector('.profile__edit');
 const popupCloseEditProfile = popupEditProfile.querySelector('.popup__close');
 const formEditProfile = popupEditProfile.querySelector('.popup__form');
@@ -13,7 +13,7 @@ const usernameInput = formEditProfile.querySelector('#username');
 const jobInput = formEditProfile.querySelector('#about');
 
 //popup добавления карточки
-const popupAddCard = document.querySelector('.popup_card-add')
+const popupAddCard = document.querySelector('.popup_card_add')
 const addCard = document.querySelector('.add-button');
 const popupCloseAddCard = popupAddCard.querySelector('.popup__close');
 const formAddCard = popupAddCard.querySelector('.popup__form');
@@ -21,7 +21,7 @@ const nameCard = formAddCard.querySelector('#name-card');
 const linkCard = formAddCard.querySelector('#link-card');
 
 //popup зума изображения
-const popupCard = document.querySelector('.popup_card-open');
+const popupCard = document.querySelector('.popup_card_open');
 const popupCloseCard = popupCard.querySelector('.popup__close');
 const popupImage = popupCard.querySelector('.popup__image');
 const popupFigcaption = popupCard.querySelector('.popup__figcaption');
