@@ -1,0 +1,13 @@
+.popup__error {
+    display: inline-block;
+    opacity: 0;
+    height: 26px;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgba(255, 0, 0, 1);
+}
+
+.popup__error:last-of-type{
+    margin-bottom: 16px;
+}
